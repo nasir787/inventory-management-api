@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+inventory_management/.env
+venv/
+db.sqlite3
+media/
+*.log
+*.sqlite3
