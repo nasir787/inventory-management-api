@@ -31,7 +31,7 @@ A Django REST Framework-based backend API for managing inventory items. This API
 # Installation
 1. Clone the Repository:
 
-    git clone https://github.com/yourusername/inventory-management-api.git
+    git clone https://github.com/nasir787/inventory-management-api.git
     cd inventory-management-api
 
 2. Create and Activate a Virtual Environment:

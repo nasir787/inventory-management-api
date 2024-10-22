@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
+
 import environ
 env = environ.Env()
 environ.Env.read_env()
@@ -89,7 +91,7 @@ DATABASES = {
 }
 
 
-# Add Redis caching to 
+# Add Redis caching
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
@@ -137,6 +139,10 @@ REST_FRAMEWORK = {
     ],
 }
 
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),  # Adjust the duration as needed
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),  # Adjust the duration as needed
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
